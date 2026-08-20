@@ -1,16 +1,10 @@
-import { Footer } from "@/components/common/footer";
-import { Header } from "@/components/common/header";
-import { Card } from "@/components/ui/card";
-import   Spotify  from "@/assets/spotify.jpg";
-export default function Services() {
-  return (
-    <>
-      <Header />
-      <main className="flex-1">
-        <div className="min-h-screen w-full relative mt-20">
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+import {Card } from "@/components/ui/card";
+
+export function FirstSectionService(){
+
+    return(
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
             <Card
-              image={Spotify}
               title="Card Title 1"
               description="OMG"
               buttonLabel="Click Me"
@@ -31,9 +25,6 @@ export default function Services() {
               buttonVariant="secondary"
             />
           </section>
-        </div>
-      </main>
-      <Footer />
-    </>
-  );
+        
+    )
 }
