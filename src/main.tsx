@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import GuestLayout from "@/pages/guest/layout"
 
 import HomePage from "@/pages/guest/home";
-import ServicePage from "@/pages/guest/service";
+import ServicePage from "@/pages/guest/project";
 import AboutPage from "@/pages/guest/about";
 import ContactPage from "@/pages/contact";
 

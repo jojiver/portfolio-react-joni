@@ -17,7 +17,7 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <NavLink to="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">Home</NavLink>
             <NavLink to="/about" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">About</NavLink>
-            <NavLink to="/service" className="text-sm font-medium text-gray-300 hover:text-gray-white transition-colors">Services</NavLink>
+            <NavLink to="/service" className="text-sm font-medium text-gray-300 hover:text-gray-white transition-colors">Projects</NavLink>
             {/* Contact Button */}
             <NavLink to="/contact">
               <Button variant="secondary">Contact</Button>

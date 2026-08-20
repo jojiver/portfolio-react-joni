@@ -1,33 +1,92 @@
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/cn";
 
 type CardProps = {
   image?: string;
   title: string;
   subtitle?: string;
+  period?: string;
   description: string;
   features?: string[];
-  buttonLabel: string;
+  buttonLabel?: string;
   buttonVariant?: "primary" | "secondary" | "tertiary";
+  variant?: "default" | "education";
 };
 
-export function Card({ image, title, subtitle, description, features, buttonLabel, buttonVariant = "primary",}: CardProps) {
+export function Card({
+  image,
+  title,
+  subtitle,
+  period,
+  description,
+  features,
+  buttonLabel,
+  buttonVariant = "primary",
+  variant = "default",
+}: CardProps) {
   return (
-    <div className="border border-black-500 rounded-lg p-6 bg-gray-50 dark:bg-gray-900/50 hover:shadow-md transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+    <div
+      className={cn(
+        "rounded-lg border p-6 transition-all duration-300",
+        variant === "default" &&
+          "border-gray-700 bg-gray-900/50 hover:-translate-y-1 hover:shadow-md",
+        variant === "education" &&
+          "border-gray-200 bg-white hover:-translate-y-1 hover:shadow-md dark:border-gray-700 dark:bg-gray-900/50",
+      )}
+    >
       {image && (
         <img
           src={image}
           alt={title}
-          className="w-full h-60 object-fit rounded-lg"
+          className="mb-6 h-60 w-full rounded-lg object-cover"
         />
       )}
-      <h1 className="justify-items-center text-xl font-semibold mb-2 text-white">
+
+      <h1
+        className={cn(
+          "text-xl font-semibold",
+          variant === "default" && "text-white",
+          variant === "education" && "text-gray-900 dark:text-white",
+        )}
+      >
         {title}
       </h1>
-      {subtitle && <p className="text-gray-400 mt-2">{subtitle}</p>}
-        <p className="text-white-600 mb-5 text-white text-center">
+
+      {subtitle && (
+        <p
+          className={cn(
+            "mt-2",
+            variant === "default" && "text-gray-400",
+            variant === "education" && "text-gray-600 dark:text-gray-400",
+          )}
+        >
+          {subtitle}
+        </p>
+      )}
+
+      {period && (
+        <span
+          className={cn(
+            "mt-3 inline-block rounded-full border px-4 py-1 text-sm",
+            variant === "education" &&
+              "border-gray-200 bg-gray-50 text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400",
+          )}
+        >
+          {period}
+        </span>
+      )}
+
+      <p
+        className={cn(
+          "mt-5",
+          variant === "default" && "text-center text-white",
+          variant === "education" && "text-gray-600 dark:text-gray-400",
+        )}
+      >
         {description}
       </p>
-      {features && (
+
+      {features && features.length > 0 && (
         <ul className="mt-6 space-y-3">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start gap-3 text-gray-300">
@@ -37,8 +96,12 @@ export function Card({ image, title, subtitle, description, features, buttonLabe
           ))}
         </ul>
       )}
-      <span className="text-sm"></span>
-      <Button variant={buttonVariant}>{buttonLabel}</Button>
+
+      {buttonLabel && (
+        <div className="mt-6">
+          <Button variant={buttonVariant}>{buttonLabel}</Button>
+        </div>
+      )}
     </div>
   );
 }

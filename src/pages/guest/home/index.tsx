@@ -1,6 +1,7 @@
 import {  HomePageBannerSection } from "@/components/features/home/homepage-banner-section";
 import {CardDataSection} from "@/components/features/home/card-data-section";
 import { ProfileSection} from "@/components/features/home/profile-section";
+import { ProjectSection  } from "@/components/features/home/project-section";
 
 export default function HomePage(){
 return(
@@ -15,6 +16,7 @@ return(
       <div className="relative">
         <HomePageBannerSection />
         <CardDataSection />
+        <ProjectSection />
         <ProfileSection />
       </div>
     </main>
