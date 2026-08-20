@@ -7,7 +7,8 @@ export default function GuestLayout() {
   return (
     <>
       <Header />
-      <main className="flex-1">
+      <main className="relative min-h-screen overflow-hidden bg-[#050505] text-white">
+        
         <Outlet />
       </main>
       <Footer />

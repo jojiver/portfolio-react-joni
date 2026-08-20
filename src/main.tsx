@@ -7,7 +7,7 @@ import GuestLayout from "@/pages/guest/layout"
 import HomePage from "@/pages/guest/home";
 import ServicePage from "@/pages/guest/project";
 import AboutPage from "@/pages/guest/about";
-import ContactPage from "@/pages/contact";
+import ContactPage from "@/pages/guest/contact";
 
 createRoot(document.getElementById("root")!).render(
  <BrowserRouter>
