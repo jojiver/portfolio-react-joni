@@ -1,7 +1,6 @@
 import Dulche from "@/assets/dulcake.png";
 import Eval from "@/assets/eval.png";
 import Portfolio from "@/assets/Profile.png";
-
 import { Card } from "@/components/ui/card";
 
 export function SecondSectionProject() {

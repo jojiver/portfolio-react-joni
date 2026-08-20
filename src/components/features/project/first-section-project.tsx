@@ -1,10 +1,9 @@
-
 import Portfolio from "@/assets/portfolio.png";
 import Dulche from "@/assets/dulcake.png";
 import Eval from "@/assets/eval.png";
 
-export function FirstSectionProject(){
-const favoriteApps = [
+export function FirstSectionProject() {
+  const favoriteApps = [
     {
       image: Dulche,
       title: "Dulche",
@@ -38,25 +37,20 @@ const favoriteApps = [
     },
   ];
 
-    return(
-
-      <section className="py-16 md:py-24 bg-[#050505]">
+  return (
+    <section className="py-16 md:py-24 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            My Favorite Apps
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Recent Projects</h2>
 
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
-            Lorem Ipsum.
+            School Projects
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {favoriteApps.map((app, index) => (
             <div key={index} className="mb-16">
-              
               <div className="group aspect-square overflow-hidden rounded-xl border border-gray-600">
                 <img
                   src={app.image}
@@ -65,13 +59,9 @@ const favoriteApps = [
                 />
               </div>
 
-              <h3 className="mt-4 text-xl font-bold text-white">
-                {app.title}
-              </h3>
+              <h3 className="mt-4 text-xl font-bold text-white">{app.title}</h3>
 
-              <p className="mt-2 text-sm text-gray-400">
-                {app.subtitle}
-              </p>
+              <p className="mt-2 text-sm text-gray-400">{app.subtitle}</p>
 
               <ul className="mt-4 space-y-3">
                 {app.features.map((feature, i) => (
@@ -90,18 +80,14 @@ const favoriteApps = [
                       />
                     </svg>
 
-                    <span className="text-sm text-gray-300">
-                      {feature}
-                    </span>
+                    <span className="text-sm text-gray-300">{feature}</span>
                   </li>
                 ))}
               </ul>
-
             </div>
           ))}
         </div>
-
       </div>
     </section>
-    )
+  );
 }

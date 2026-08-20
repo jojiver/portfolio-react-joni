@@ -2,6 +2,7 @@ import {  HomePageBannerSection } from "@/components/features/home/homepage-bann
 import {CardDataSection} from "@/components/features/home/card-data-section";
 import { ProfileSection} from "@/components/features/home/profile-section";
 import { ProjectSection  } from "@/components/features/home/project-section";
+import { FirstContactSection } from "@/components/features/contact/FirstSection";
 
 export default function HomePage(){
 return(
@@ -18,6 +19,7 @@ return(
         <CardDataSection />
         <ProjectSection />
         <ProfileSection />
+        <FirstContactSection/>
       </div>
     </main>
     

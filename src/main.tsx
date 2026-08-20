@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import GuestLayout from "@/pages/guest/layout"
 
 import HomePage from "@/pages/guest/home";
-import ServicePage from "@/pages/guest/project";
+import ProjectPage from "@/pages/guest/project";
 import AboutPage from "@/pages/guest/about";
 import ContactPage from "@/pages/guest/contact";
 
@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")!).render(
       
       <Route element={<GuestLayout />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/service" element={<ServicePage />} />
+        <Route path="/project" element={<ProjectPage />} />
         <Route path ="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Route>

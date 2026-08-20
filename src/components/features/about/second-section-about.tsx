@@ -23,7 +23,7 @@ export function SecondSectionAbout() {
         title="Senior High School"
         subtitle="Babang National High School"
         period="2020 - 2022"
-        description="Completed my senior high school education at Babag National High School, where I gained a strong foundation in core subjects and developed essential life skills."
+        description="Senior High School helped me prepare for the next chapter of my education by developing my skills, confidence, and interests while gaining a clearer direction for my future career."
         variant="education"
       />
 
@@ -31,7 +31,7 @@ export function SecondSectionAbout() {
         title="Junior High School"
         subtitle="Babang National High School"
         period="2018 - 2020"
-        description="Completed my junior high school education at Babag National High School, where I gained a strong foundation in core subjects and developed essential life skills."
+        description="Junior High School was a period of growth and exploration. I strengthened my academic foundation, developed new interests, and learned the importance of discipline, teamwork, and perseverance."
         variant="education"
       />
 
@@ -39,7 +39,7 @@ export function SecondSectionAbout() {
         title="Elementary"
         subtitle="Cogon Elementary School"
         period="2012 - 2018"
-        description="Completed my elementary education at Cogon Elementary School, where I gained a strong foundation in core subjects and developed essential life skills."
+        description="My elementary years were the foundation of my learning journey, where I developed essential academic skills, curiosity, and a love for discovering new things."
         variant="education"
       />
 
