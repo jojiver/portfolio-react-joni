@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
-              Let's Build Something Amazing Together
+              Let's Build Something Amazing Together!
             </h2>
 
             <nav className="mt-4 flex gap-5 text-sm">
