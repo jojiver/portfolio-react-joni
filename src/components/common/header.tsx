@@ -90,7 +90,7 @@ export function Header() {
       {/* Mobile Menu Panel */}
       <div
         className={cn(
-          "md:hidden border-t border-gray-200 bg-white transition-all duration-300 ease-in-out grid overflow-hidden absolute top-16 left-0 right-0 border-b shadow-lg z-50",
+          "md:hidden absolute top-16 left-0 right-0 z-50 grid overflow-hidden border-b border-white/10 bg-[#050505] shadow-lg transition-all duration-300 ease-in-out",
           isMenuOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0 pointer-events-none"
         )}
       >
@@ -108,7 +108,7 @@ export function Header() {
             ))}
             <div className="pt-2 border-t border-gray-100">
               <NavLink to="/contact" onClick={toggleMenu} className="inline-block w-full">
-                <Button className="w-full">Contact</Button>
+                <Button variant="secondary"className="text-white w-full">Contact</Button>
               </NavLink>
             </div>
           </div>
