@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from "@/pages/home.tsx";
 import AboutPage from "@/pages/about.tsx";
+import Services from "@/pages/service.tsx";
 import ContactPage from "@/pages/contact";
 
 createRoot(document.getElementById("root")!).render(
@@ -11,7 +12,9 @@ createRoot(document.getElementById("root")!).render(
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
+        <Route path="/service" element={< Services/>} />
       <Route path="/contact" element={<ContactPage />} />
+      
     </Routes>
   </BrowserRouter>,
 )
