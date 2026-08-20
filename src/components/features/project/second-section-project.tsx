@@ -47,7 +47,7 @@ export function SecondSectionProject() {
             My Recent Projects
           </h2>
 
-          <p className="mt-4 text-lg text-slate-600 dark:text-gray-400">PPAP</p>
+          <p className="mt-4 text-lg text-slate-600 dark:text-gray-400">School Projects</p>
         </div>
 
         <div className="space-y-16 md:space-y-24">
