@@ -4,7 +4,7 @@ export function SecondSectionAbout() {
   return (
     <section className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="mb-12 text-4xl font-bold text-white">Education</h2>
+        <h2 className="mb-12 text-4xl font-bold text-slate-900 dark:text-white">Education</h2>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <Card

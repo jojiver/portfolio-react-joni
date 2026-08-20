@@ -7,8 +7,7 @@ export default function GuestLayout() {
   return (
     <>
       <Header />
-      <main className="relative min-h-screen overflow-hidden bg-[#050505] text-white">
-        
+      <main className="relative min-h-screen overflow-hidden bg-slate-50 text-slate-900 dark:bg-[#050505] dark:text-white">
         <Outlet />
       </main>
       <Footer />

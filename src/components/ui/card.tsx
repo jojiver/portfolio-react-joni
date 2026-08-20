@@ -34,7 +34,7 @@ export function Card({
         {" "}
         <div
           className={cn(
-            "group aspect-square overflow-hidden rounded-xl",
+            "group aspect-square overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-white/10 dark:bg-white/5",
             reverse ? "md:order-2" : "md:order-1",
           )}
         >
@@ -50,19 +50,31 @@ export function Card({
         {/* PROJECT INFORMATION */}{" "}
         <div className={cn(reverse ? "md:order-1" : "md:order-2")}>
           {" "}
-          <h1 className="text-2xl font-bold text-white">{title}</h1>{" "}
-          {subtitle && <p className="mt-2 text-sm text-gray-400">{subtitle}</p>}{" "}
-          {description && <p className="mt-5 text-gray-300">{description}</p>}{" "}
+          <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
+            {title}
+          </h1>{" "}
+          {subtitle && (
+            <p className="mt-2 text-sm text-slate-500 dark:text-gray-400">
+              {subtitle}
+            </p>
+          )}{" "}
+          {description && (
+            <p className="mt-5 text-slate-600 dark:text-gray-300">
+              {description}
+            </p>
+          )}{" "}
           {features && features.length > 0 && (
             <ul className="mt-5 space-y-3">
               {" "}
               {features.map((feature) => (
                 <li
                   key={feature}
-                  className="flex items-start gap-3 text-gray-300"
+                  className="flex items-start gap-3 text-slate-600 dark:text-gray-300"
                 >
                   {" "}
-                  <span className="text-blue-400">✓</span>{" "}
+                  <span className="text-blue-500 dark:text-blue-400">
+                    ✓
+                  </span>{" "}
                   <span>{feature}</span>{" "}
                 </li>
               ))}{" "}
@@ -83,7 +95,7 @@ export function Card({
       className={cn(
         "rounded-lg border p-6 transition-all duration-300",
         variant === "default" &&
-          "border-gray-700 bg-gray-900/50 hover:-translate-y-1 hover:shadow-md",
+          "border-slate-200 bg-white shadow-sm hover:-translate-y-1 hover:shadow-md dark:border-gray-700 dark:bg-gray-900/50",
         variant === "education" &&
           "border-gray-200 bg-white hover:-translate-y-1 hover:shadow-md dark:border-gray-700 dark:bg-gray-900/50",
       )}
@@ -99,7 +111,7 @@ export function Card({
       <h1
         className={cn(
           "text-xl font-semibold",
-          variant === "default" && "text-white",
+          variant === "default" && "text-slate-900 dark:text-white",
           variant === "education" && "text-gray-900 dark:text-white",
         )}
       >
@@ -110,7 +122,7 @@ export function Card({
         <p
           className={cn(
             "mt-2",
-            variant === "default" && "text-gray-400",
+            variant === "default" && "text-slate-500 dark:text-gray-400",
             variant === "education" && "text-gray-600 dark:text-gray-400",
           )}
         >
@@ -133,7 +145,7 @@ export function Card({
       <p
         className={cn(
           "mt-5",
-          variant === "default" && "text-center text-white",
+          variant === "default" && "text-center text-slate-600 dark:text-white",
           variant === "education" && "text-gray-600 dark:text-gray-400",
         )}
       >
@@ -144,7 +156,10 @@ export function Card({
         <ul className="mt-6 space-y-3">
           {" "}
           {features.map((feature) => (
-            <li key={feature} className="flex items-start gap-3 text-gray-300">
+            <li
+              key={feature}
+              className="flex items-start gap-3 text-slate-600 dark:text-gray-300"
+            >
               {" "}
               <span className="text-blue-500">✓</span>{" "}
               <span>{feature}</span>{" "}

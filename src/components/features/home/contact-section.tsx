@@ -4,28 +4,20 @@ export function FirstContactSection() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6">
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-
-        
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
-
-       
           <div className="pt-4">
             <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
               Let's talk.
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-7 text-gray-400 md:text-lg">
-              Have a project or need help? Fill out the form, and I'll get
-              back to you soon.
+              Have a project or need help? Fill out the form, and I'll get back
+              to you soon.
             </p>
           </div>
 
-
-      
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm md:p-8">
             <form className="space-y-6">
-
-            
               <div>
                 <label
                   htmlFor="name"
@@ -42,8 +34,6 @@ export function FirstContactSection() {
                 />
               </div>
 
-
-             
               <div>
                 <label
                   htmlFor="email"
@@ -60,8 +50,6 @@ export function FirstContactSection() {
                 />
               </div>
 
-
-        
               <div>
                 <label
                   htmlFor="project"
@@ -78,19 +66,12 @@ export function FirstContactSection() {
                 />
               </div>
 
-
               {/* Submit */}
-              <Button
-                type="submit"
-                variant="secondary"
-                className="w-full"
-              >
+              <Button type="submit" variant="secondary" className="w-full">
                 Submit
               </Button>
-
             </form>
           </div>
-
         </div>
       </div>
     </section>
