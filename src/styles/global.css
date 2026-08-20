@@ -3,5 +3,6 @@
 #root {
   min-height: 100vh;
   display: flex;
+  background: #050505;
   flex-direction: column;
 }
